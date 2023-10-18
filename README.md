@@ -7,3 +7,5 @@
 - создать свой вишлист
 - трекать вишилсты других людей
 - листать ленту с разными подарками, добавленными другими людьми, и возможностью добавить себе тот же самый подарок в вишлист
+
+![Wisher page example](https://github.com/thepriceless/WebProgramming/blob/main/Frontend/Layouts/Wisher%20page.jpg)
