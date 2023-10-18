@@ -1,0 +1,17 @@
+.suggestion-zone__title {
+    width: 40%;
+    height: fit-content;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+    font-size: 40px;
+    font-family: "Bold";
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+            line-clamp: 2;
+}

@@ -1,0 +1,9 @@
+.nav-bar__text {
+    display: inline-block;
+    margin: 0px;
+
+    font-family: 'Bold';
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+}

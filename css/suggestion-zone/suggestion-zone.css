@@ -1,0 +1,23 @@
+.suggestion-zone {
+    height: 100%;
+    position: relative;
+    border: solid #b3aeae;
+    border-radius: 24px;
+    background: rgba(171, 175, 178, 0.6);
+            backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.suggestion-zone::after {
+    content: '';
+    background-image: url(/Visual\ elements/back-glass.png);
+    background-size: cover;
+    border-radius: 24px;
+    position: absolute;
+    opacity: 0.7;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
+}

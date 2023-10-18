@@ -1,0 +1,6 @@
+.nav-bar {
+    height: inherit;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
