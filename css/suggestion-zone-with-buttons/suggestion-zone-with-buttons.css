@@ -1,8 +1,7 @@
 .suggestion-zone-with-buttons {
     position: relative;
-    height: 65vh;
-    margin-left: 120px;
-    margin-right: 120px;
+    height: 74vh;
+    margin: 0 150px;
     
     display: flex;
     gap: 15px;

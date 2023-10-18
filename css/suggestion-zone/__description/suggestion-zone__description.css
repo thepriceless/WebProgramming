@@ -1,13 +1,15 @@
 .suggestion-zone__description {
-    width: 40%;
-    margin: 0 0 60px 40px;
+    width: 100%;
+    line-height: 1.2em;
+    height: 8.4em;
+    margin: 0 0 60px;
 
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 6;
-            line-clamp: 6;
+    -webkit-line-clamp: 7;
+            line-clamp: 7;
 
     font-family: 'Myriad Regular';
 }

@@ -7,14 +7,14 @@ html {
 
 header{
     width: 60%;
-    margin-left: 150px;
+    margin-left: 190px;
     margin-bottom: 30px;
     height: 45px;
 }
 
 body {
-    margin-top: 10vh;
-    height: 90vh;
+    margin-top: 8vh;
+    height: 92vh;
 }
 
 @font-face {
