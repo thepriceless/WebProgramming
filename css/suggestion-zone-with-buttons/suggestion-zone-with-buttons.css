@@ -1,9 +1,0 @@
-.suggestion-zone-with-buttons {
-    position: relative;
-    height: 74vh;
-    margin: 0 150px;
-    
-    display: flex;
-    gap: 15px;
-    align-items: center;
-}

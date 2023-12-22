@@ -5,122 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="wishlist, present, party, wish">
     <meta name="description" content="Your wishlist">
-    <link href="/css/stylesheet.css" rel="stylesheet">
-    <link href="/css/logo/logo.css" rel="stylesheet">
-    <link href="/css/nav-bar/nav-bar.css" rel="stylesheet">
-    <link href="/css/nav-bar/__box/nav-bar__box.css" rel="stylesheet">
-    <link href="/css/nav-bar/__text/_bold/nav-bar__text_bold.css" rel="stylesheet">
-    <link href="/css/log-out/log-out.css" rel="stylesheet">
-    <link href="/css/selection-bar/selection-bar.css" rel="stylesheet">
-    <link href="/css/selection-bar/__group-name-box/selection-bar__group-name-box.css" rel="stylesheet">
-    <link href="/css/wishes-zone/wishes-zone.css" rel="stylesheet">
-    <link href="/css/wishes-zone/__wish-box/wishes-zone__wish-box.css" rel="stylesheet">
-    <link href="/css/wishes-zone/__wish-name/wishes-zone__wish-name.css" rel="stylesheet">
-    <link href="/css/wishes-zone/__wish-description/wishes-zone__wish-description.css" rel="stylesheet">
-    <link href="/css/wishes-zone/__wish-box-img_rounded/wish-box-img_rounded.css" rel="stylesheet">
+    <link href="/WebProgramming/css/stylesheet.css" rel="stylesheet">
+    <link href="/WebProgramming/css/logo/logo.css" rel="stylesheet">
+    <link href="/WebProgramming/css/nav-bar/nav-bar.css" rel="stylesheet">
+    <link href="/WebProgramming/css/log-out/log-out.css" rel="stylesheet">
+    <link href="/WebProgramming/css/selection-bar/selection-bar.css" rel="stylesheet">
+    <link href="/WebProgramming/css/wishes-zone/wishes-zone.css" rel="stylesheet">
+    <script src="/WebProgramming/js/script.js"></script>
+    <script src="/WebProgramming/js/add-to-list.js"></script>
     <title>My wishlist</title>
 </head>
 <body>
-    <header>
-        <img class="logo" src="/Media/logo.png" alt="logo">
-        <nav class="nav-bar">
-            <div class="nav-bar__box">
-                <p class="nav-bar__text_bold">
-                    <b>Name</b>
-                </p>
+    <div class="body__main">
+        <header>
+            <nav class="nav-bar">
+                <a class="nav-bar__box" id="my-wishlist" href="./my-wishlist.html">
+                    <p class="nav-bar__text">
+                        My wishlist
+                    </p>
+                </a>
+                <a class="nav-bar__box" id="friends">
+                    <p class="nav-bar__text">
+                        Friends
+                    </p>
+                </a>
+                <a class="nav-bar__box" id="wisher" href="./index.html">
+                    <p class="nav-bar__text">
+                        Wisher
+                    </p>
+                </a>
+                <img class="nav-bar__profile-photo" src="/Media/avarotated.jpg" alt="next"/>
+            </nav>
+        </header>
+        <main>
+            <form onsubmit="addWishItem(event)">
+                <label>Item name
+                    <input type="text" id="item-name" name="item-name">
+                </label><br>
+                <label>Item image
+                    <input type="file" name="picture"/>
+                </label><br>
+                <button type="submit">Add</button>
+            </form>
+            <div class="wish__zone">
+                <template class="wish__item-template">
+                    <div class="wish__item">
+                        <div class="wish__back-photo">
+                            <h2 class="wish__item-title">Title</h2>
+                            <h5 class="wish__item-date">13.12.2022</h5>
+                        </div>
+                    </div>
+                </template>
             </div>
-            <div class="nav-bar__box">
-                <p class="nav-bar__text">
-                    My wishlist
-                </p>
-            </div>
-            <div class="nav-bar__box">
-                <p class="nav-bar__text">
-                    Friends
-                </p>
-            </div>
-            <div class="nav-bar__box">
-                <p class="nav-bar__text">
-                    Wisher
-                </p>
-            </div>
-            <div class="log-out">
-                <i>Log out</i>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <ul class="selection-bar">
-            <li class="selection-bar__group-name-box">
-                Group 1
-            </li>
-            <li class="selection-bar__group-name-box">
-                Group 2
-            </li>
-            <li class="selection-bar__group-name-box">
-                Group 3
-            </li>
-            <li class="selection-bar__group-name-box">
-                Group 4
-            </li>
-            <li class="selection-bar__group-name-box">
-                Unclassified
-            </li>
-            <li class="selection-bar__group-name-box">
-                All
-            </li>
-        </ul>
-
-        <ul class="wishes-zone">
-            <li class="wishes-zone__wish-box">
-                <img class="wish-box-img_rounded" src="/Media/socks.jpg" alt="wish" width="250" height="250">
-                <p class="wishes-zone__wish-name">
-                    <b>Wish 1</b>
-                </p>
-                <span class="wishes-zone__wish-description">
-                    <em>Wish description 1</em>
-                </span>
-            </li>
-            <li class="wishes-zone__wish-box">
-                <img class="wish-box-img_rounded" src="/Media/ginger.jpg" alt="wish" width="250" height="250">
-                <p class="wishes-zone__wish-name">
-                    <b>Wish 2</b>
-                </p>
-                <span class="wishes-zone__wish-description">
-                    <em>Wish description 2</em>
-                </span>
-            </li>
-            <li class="wishes-zone__wish-box">
-                <img class="wish-box-img_rounded" src="/Media/Black_square.jpg" alt="wish" width="250" height="250">
-                <p class="wishes-zone__wish-name">
-                    <b>Wish 3</b>
-                </p>
-                <span class="wishes-zone__wish-description">
-                    <em>Wish description 3</em>
-                </span>
-            </li>
-        </ul>
-        <article>
-            <h1>Preformatted text example</h1>
-            <div class="shittiest shit ekzampel">
-                <pre>
-                        ___
-                    .-~"   "~-. 
-                   /           \
-                  Y             Y
-                  |             |
-                  l             !
-                   \           /
-                    "-.,___,.-"
-                </pre>
-                <code>
-                    public static vashu mamu(String[] args) {}
-                </code>
-            </div>
-        </article>
-    </main>
-    <footer>
-        <p>Footer will be here</p>
-    </footer>
+        </main>
+        <footer>
+            <p id="load-time">Footer will be here</p>
+        </footer>
+    </div>
 </body>
 </html>

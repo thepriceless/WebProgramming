@@ -1,9 +1,0 @@
-.suggestion-zone__photo {
-    box-sizing: border-box;
-    height: 455.5px;
-    aspect-ratio: 1;
-    object-fit: cover;
-
-    border: solid #fff 4px;
-    border-radius: 24px;
-}
