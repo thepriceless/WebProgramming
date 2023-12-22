@@ -34,22 +34,22 @@ body {
 
 @font-face {
     font-family: "Regular";
-    src: url("/fonts/SpaceMono-Regular.ttf");
+    src: url("/WebProgramming/fonts/SpaceMono-Regular.ttf");
 }
 @font-face {
     font-family: "Bold";
-    src: url("/fonts/SpaceMono-Bold.ttf");
+    src: url("/WebProgramming/fonts/SpaceMono-Bold.ttf");
 }
 @font-face {
     font-family: "BoldItalic";
-    src: url("/fonts/SpaceMono-BoldItalic.ttf");
+    src: url("/WebProgramming/fonts/SpaceMono-BoldItalic.ttf");
 }
 @font-face {
     font-family: "Italic";
-    src: url("/fonts/SpaceMono-Italic.ttf");
+    src: url("/WebProgramming/fonts/SpaceMono-Italic.ttf");
 }
 
 @font-face {
     font-family: "Myriad Regular";
-    src: url("/fonts/MYRIADPRO-REGULAR.OTF");
+    src: url("/WebProgramming/fonts/MYRIADPRO-REGULAR.OTF");
 }
