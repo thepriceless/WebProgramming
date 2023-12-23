@@ -18,6 +18,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    position: fixed;
     margin: 0px;
 }
 
