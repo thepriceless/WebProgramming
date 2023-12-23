@@ -11,9 +11,9 @@
     <link href="/WebProgramming/css/log-out/log-out.css" rel="stylesheet">
     <link href="/WebProgramming/css/selection-bar/selection-bar.css" rel="stylesheet">
     <link href="/WebProgramming/css/wishes-zone/wishes-zone.css" rel="stylesheet">
-    <link href="/WebProgramming/css/form/forms.css" rel="stylesheet">
+    <link href="/WebProgramming/css/friends/friends-list.css" rel="stylesheet">
     <script src="/WebProgramming/js/script.js"></script>
-    <script src="/WebProgramming/js/add-to-list.js"></script>
+    <script src="/WebProgramming/js/fetch-script.js"></script>
     <title>My wishlist</title>
 </head>
 <body>
@@ -38,32 +38,20 @@
                 <img class="nav-bar__profile-photo" src="/WebProgramming/Media/avarotated.jpg" alt="next"/>
             </nav>
         </header>
-        <main class="shifted">
-            <form onsubmit="addWishItem(event)" class="add-item-form">
-                <div class="form-items">
-                    <label class="form-field">Item name:</label><br>
-                    <label class="form-field">Item image:</label><br>
-                </div>
-                <div class="form-answers">
-                    <input type="text" id="item-name" name="item-name">
-                    <input type="file" name="picture"/>
-                </div>
-                <button class="submit-item" type="submit">Add</button>
-            </form>
-            <div class="wish__zone">
-                <template class="wish__item-template">
-                    <div class="wish__item">
-                        <div class="wish__back-photo">
-                            <h2 class="wish__item-title">Title</h2>
-                            <h5 class="wish__item-date">13.12.2022</h5>
+        <main>
+            <div class="friends-zone">
+                <h1 class="friends-list__title">Friends</h1>
+                <div class="friends-list">
+                    <img class="preloader" src="/WebProgramming/Media/XHXn.gif">
+                    <template class="friend-template">
+                        <div class="friend-item">
+                            <img class="friend-photo" alt="next"/>
+                            <h2 class="friend-name">Name</h2>
                         </div>
-                    </div>
-                </template>
+                    </template>
+                </div>
             </div>
         </main>
-        <footer>
-            <p id="load-time">Footer will be here</p>
-        </footer>
     </div>
 </body>
 </html>

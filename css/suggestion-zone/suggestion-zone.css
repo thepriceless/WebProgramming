@@ -54,7 +54,7 @@
 
 .suggestion-zone::after {
     content: '';
-    background-image: url(/Visual\ elements/back-glass.png);
+    background-image: url(/WebProgramming/Visual\ elements/back-glass.png);
     background-size: cover;
     border-radius: 24px;
     position: absolute;

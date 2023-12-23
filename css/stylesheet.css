@@ -16,6 +16,8 @@ body {
     min-height: 100vh;
     background-image: url(/WebProgramming/Frontend/Layouts/background.png);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     margin: 0px;
 }
 
